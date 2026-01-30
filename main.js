@@ -1,34 +1,51 @@
 $(function () {
-  $('.game-slider').slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
+  if ($('.game-slider').length) {
+    try {
+      $('.game-slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
 
-    arrows: true,
-    dots: false,
-    infinite: false,
+        infinite: true,
+        swipe: true,
+        swipeToSlide: true,
+        draggable: true,
+        touchMove: true,
 
-    swipe: true,          // ✅ bật swipe
-    swipeToSlide: true,   // ✅ lướt tới slide bất kỳ
-    draggable: true,      // ✅ kéo chuột trên desktop
+        autoplay: true,           // Tự động chạy
+        autoplaySpeed: 1000,      // Chuyển slide mỗi 2 giây
+        pauseOnHover: true,       // Dừng khi di chuột vào
 
-    touchMove: true,      // ✅ cho mobile
+        arrows: false,
+        dots: false,
 
-    centerMode: false,
-    variableWidth: false,
+        speed: 400,
+        cssEase: 'ease',
 
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: 4 }
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 3 }
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 2 }
-      }
-    ]
-  });
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2
+            }
+          }
+        ]
+      });
+    } catch (error) {
+      console.error('Slick slider error:', error);
+    }
+  } else {
+    console.warn('Element .game-slider not found');
+  }
 });
