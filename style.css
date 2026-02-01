@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #fdecea;
 }
 
@@ -111,8 +111,7 @@ body {
 }
 
 .game-item img {
-    width: 100%;
-    max-width: 212.73px;
+    width: 212.73px;
     height: 250px;
     object-fit: cover;
     object-position: center bottom;
@@ -120,9 +119,155 @@ body {
     display: block;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    flex-shrink: 0;
 }
 
 .game-item img:hover {
     transform: scale(1.1);
+}
+
+.entertainment-1 {
+    width: 1059px;
+    height: 873px;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+.frame-bg-1 {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.promo-header {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.promo-bg-1 {
+    display: block;
+    position: relative;
+}
+
+.entertainment-title-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 0 0 10px;
+    white-space: nowrap;
+    padding: 0 20px;
+}
+
+.entertainment-desc-1 {
+    position: absolute;
+    top: 98px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: auto;
+    color: #000000;
+    text-align: justify;
+    z-index: 2;
+    padding: 20px 30px;
+}
+
+.promo-girl-1 {
+    position: absolute;
+    top: 367px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 2;
+}
+
+
+.entertainment-2 {
+    width: 1059px;
+    height: 873px;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+.frame-bg-2 {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.promo-header-2 {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.promo-bg-2 {
+    display: block;
+    position: relative;
+}
+
+.entertainment-title-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 0 0 10px;
+    white-space: nowrap;
+    padding: 0 20px;
+}
+
+.entertainment-desc-2 {
+    position: absolute;
+    top: 98px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: auto;
+    color: #000000;
+    text-align: justify;
+    z-index: 2;
+    padding: 20px 30px;
+}
+
+.promo-girl-2 {
+    position: absolute;
+    top: 367px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 2;
+}
+
+/* Card Section */
+.card-section {
+    margin-top: 68px;
+    margin-bottom: 114px;
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    max-width: 1042px;
+    display: block;
+    margin: 0 auto;
 }
