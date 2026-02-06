@@ -15,8 +15,8 @@ $(function () {
         autoplaySpeed: 1000,      // Chuyển slide mỗi 2 giây
         pauseOnHover: true,       // Dừng khi di chuột vào
 
-        arrows: false,
-        dots: false,
+        arrows: true,
+        dots: true,
 
         speed: 400,
         cssEase: 'ease',

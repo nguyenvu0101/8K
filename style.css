@@ -97,6 +97,55 @@ body {
     margin: 0 auto;
     margin-top: 30px;
     padding: 20px;
+    position: relative;
+}
+
+/* Slider Arrows */
+.game-slider-section .slick-prev,
+.game-slider-section .slick-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(220, 38, 38, 0.8);
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.game-slider-section .slick-prev:hover,
+.game-slider-section .slick-next:hover {
+    background-color: rgba(220, 38, 38, 1);
+    transform: scale(1.1);
+}
+
+.game-slider-section .slick-prev {
+    left: -25px;
+}
+
+.game-slider-section .slick-next {
+    right: -25px;
+}
+
+.game-slider-section .slick-prev:before,
+.game-slider-section .slick-next:before {
+    font-size: 24px;
+    color: white;
+    opacity: 1;
+}
+
+/* Slider Dots */
+.game-slider-section .slick-dots {
+    bottom: -40px;
+}
+
+.game-slider-section .slick-dots li button:before {
+    font-size: 12px;
+    color: #dc2626;
+    opacity: 0.5;
+}
+
+.game-slider-section .slick-dots li.slick-active button:before {
+    color: #dc2626;
+    opacity: 1;
 }
 
 .game-item {
@@ -265,9 +314,90 @@ body {
     text-align: center;
 }
 
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1042px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    flex: 1;
+    max-width: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
+}
+
+/* Date Badge */
+.card-date-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    padding: 8px 12px;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.date-day {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1;
+}
+
+.date-month {
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+    line-height: 1;
+    margin-top: 2px;
+}
+
 .card-image {
     width: 100%;
-    max-width: 1042px;
+    height: 200px;
     display: block;
-    margin: 0 auto;
+    object-fit: cover;
+}
+
+/* Card Content */
+.card-content {
+    padding: 20px;
+    text-align: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #dc2626;
+    margin: 0 0 12px 0;
+    line-height: 1.4;
+}
+
+.card-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
 }
